@@ -8,6 +8,8 @@ pipeline {
             steps { 
                 sh 'echo "Building."'
                 sh 'printenv'
+                sh 'echo ---------'
+                sh 'echo $BRANCH_NAME'
             }
         }
         stage('Test'){
