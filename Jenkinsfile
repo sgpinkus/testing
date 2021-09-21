@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Test'){
             steps { 
-                sh 'testing'
+                sh 'echo testing ${GIT_BRANCH}'
             }
         }
         stage('Deploy') {
