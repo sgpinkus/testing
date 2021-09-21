@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps { 
-                sh 'echo "Building."'
+                sh 'echo "Building..."'
                 sh 'printenv'
                 sh 'echo ---------'
                 sh 'echo $BRANCH_NAME'
