@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('Build') {
             steps { 
-                sh 'echo Building. BRANCH_NAME=${env.BRANCH_NAME}'
+                sh 'echo "Building."'
+                sh 'printenv'
             }
         }
         stage('Test'){
